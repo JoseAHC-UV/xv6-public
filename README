@@ -1,3 +1,18 @@
+Proyecto Final De Sistemas Operativos
+
+Mi trabajo sobre el proyecto final.
+
+Archivos modificados (mas detalles en el informe):
+
+Makefile -> Añadir los tres comandos requeridos (date, uptime y nsyscall)
+user.h -> Añadidos los prototipos  int date(struct rtcdate*); int uptime(void); int nsyscall();
+usys.S -> Añadidos SYSCALL(date), SYSCALL(uptime) y SYSCALL(nsyscall)
+syscall.h -> Añadidos #define SYS_date 22 y #define SYS_nsyscall 23
+syscall.c -> Añadidos los puntos de entrada para las tres funciones, también se definió un arreglo para contar el número de syscalls.
+sysproc.c -> Añadidas las implementaciones de sys_date() y sys_nsyscall()
+date.c, uptime.c y nsyscall.c -> Añadido para invocar el comando
+
+
 xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
 Version 6 (v6).  xv6 loosely follows the structure and style of v6,
 but is implemented for a modern x86-based multiprocessor using ANSI C.
