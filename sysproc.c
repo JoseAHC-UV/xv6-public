@@ -6,9 +6,8 @@
 #include "memlayout.h"
 #include "mmu.h"
 #include "proc.h"
-extern int counter [23];
 
-extern void count();
+extern int counter [23];
 
 int sys_fork(void)
 {
